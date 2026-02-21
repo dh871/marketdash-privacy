@@ -3,219 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | Finance Tools</title>
+  <title>Privacy Policy | MarketDash</title>
   <style>
-    :root {
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --border: #dbe4f0;
-      --accent: #1d4ed8;
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --border:#dbe4f0;
+      --accent:#1d4ed8;
+      --ok:#166534;
+      --warn:#92400e;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.55;
     }
-    .wrap {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 28px 16px 48px;
+    .wrap{max-width:980px;margin:0 auto;padding:28px 16px 48px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:22px;
+      margin-bottom:14px;
     }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 14px;
+    h1{font-size:30px;margin:0 0 4px}
+    h2{margin:0 0 8px;font-size:20px;color:#0b1d46}
+    h3{margin:16px 0 6px;font-size:16px;color:#0b1d46}
+    p,li{color:#17233a}
+    ul{margin-top:6px}
+    .muted{color:var(--muted)}
+    .small{font-size:13px;color:var(--muted)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .badge{
+      display:inline-block;
+      padding:6px 10px;
+      font-size:12px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:#eff6ff;
+      color:#1e3a8a;
+      margin-right:6px;
+      margin-bottom:6px;
     }
-    h1 {
-      font-size: 30px;
-      margin: 0 0 4px;
-    }
-    h2 {
-      margin-top: 0;
-      font-size: 20px;
-      color: #0b1d46;
-    }
-    h3 {
-      margin: 16px 0 6px;
-      font-size: 16px;
-      color: #0b1d46;
-    }
-    p, li { color: #17233a; }
-    .muted { color: var(--muted); }
-    ul { margin-top: 6px; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .small { font-size: 13px; color: var(--muted); }
-    .badge {
-      display: inline-block;
-      padding: 6px 10px;
-      font-size: 12px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      background: #eff6ff;
-      color: #1e3a8a;
-      margin-right: 6px;
-      margin-bottom: 6px;
-    }
+    .ok{color:var(--ok)}
+    .warn{color:var(--warn)}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.95em}
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="card">
       <h1>Privacy Policy</h1>
-      <p class="muted">Finance Tools</p>
-      <p class="small"><strong>Effective date:</strong> February 16, 2026</p>
-      <p class="small"><strong>Last updated:</strong> February 16, 2026</p>
+      <p class="muted">MarketDash (Finance Dashboard)</p>
+      <p class="small"><strong>Effective date:</strong> February 21, 2026</p>
+      <p class="small"><strong>Last updated:</strong> February 21, 2026</p>
     </section>
 
     <section class="card">
       <h2>1. Who We Are</h2>
       <p>
-        This Privacy Policy explains how the Finance Tools app ("App") handles information.
-        If you have questions, contact:
+        This Privacy Policy describes how MarketDash ("App") handles information.
       </p>
       <p>
         <strong>Owner:</strong> Rohan Dalal<br>
-        <strong>Email:</strong> <a href="mailto:04.ribbon.sinuous@icloud.com">04.ribbon.sinuous@icloud.com</a>
-      </p>
-      <p class="small">
-        Replace <code>04.ribbon.sinuous@icloud.com</code> with your real support email before publishing.
+        <strong>Support:</strong> Use TestFlight feedback or the support contact listed in App Store Connect.
       </p>
     </section>
 
     <section class="card">
-      <h2>2. Summary</h2>
-      <span class="badge">No account signup required</span>
+      <h2>2. Plain-Language Summary</h2>
+      <span class="badge">No account required</span>
       <span class="badge">No ads</span>
       <span class="badge">No third-party analytics SDK</span>
-      <span class="badge">User-entered API keys stored on-device</span>
-      <span class="badge">Market data fetched from selected providers</span>
+      <span class="badge">API keys stored in iOS/macOS Keychain</span>
+      <span class="badge">User BYOK model (you bring your own keys)</span>
+      <span class="badge">No developer-run backend for your app data</span>
       <p>
-        We do not sell personal data. Most app data is stored locally on your device.
+        We do not sell your personal data. The App is primarily on-device. When you use live market data
+        and AI features, your device calls the selected third-party APIs directly.
       </p>
     </section>
 
     <section class="card">
-      <h2>3. Information We Process</h2>
+      <h2>3. Information Processed</h2>
 
-      <h3>3.1 Information you enter</h3>
+      <h3>3.1 Data you enter</h3>
       <ul>
-        <li>Ticker symbols, watchlists, journal entries, and tool inputs.</li>
-        <li>Optional API keys you choose to paste (for example, Finnhub keys).</li>
+        <li>Ticker symbols, watchlists, portfolio weights, screener inputs, and other tool inputs.</li>
+        <li>Optional API keys you paste (FMP, Finnhub, Twelve Data, OpenAI, Anthropic, Gemini).</li>
+        <li>Optional AI prompts/questions you type in the Cross-Tool AI Copilot and related AI tools.</li>
       </ul>
+
+      <h3>3.2 Data fetched from providers</h3>
+      <ul>
+        <li>Market, news, filings, and broker-flow data from your enabled market data providers.</li>
+        <li>AI responses from your selected LLM provider.</li>
+      </ul>
+
+      <h3>3.3 Data we do not intentionally collect</h3>
+      <ul>
+        <li>No account profile data (name, phone number, postal address) is required for app usage.</li>
+        <li>No ad tracking identifiers are collected by us.</li>
+        <li>No third-party analytics/ads SDK is used in normal app runtime.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Where Data Is Stored</h2>
+
+      <h3>4.1 API keys</h3>
+      <ul>
+        <li><strong>Primary storage:</strong> Native Keychain on your device.</li>
+        <li><strong>Security class:</strong> Keychain items are stored with <code>kSecAttrAccessibleAfterFirstUnlock</code>.</li>
+        <li><strong>Migration behavior:</strong> legacy web-storage key aliases are read once at startup, copied into Keychain flow, then removed.</li>
+        <li><strong>Fail-closed behavior:</strong> if native persistence is temporarily unavailable, key is session-active only until queued persistence succeeds.</li>
+      </ul>
+
+      <h3>4.2 Other app state</h3>
       <p>
-        This information is stored locally in your app/webview storage (for example,
-        local/session storage), so you can keep your settings between sessions.
+        Non-key app state may be stored locally (WebView local storage/UserDefaults), including:
       </p>
+      <ul>
+        <li>Watchlists, portfolio snapshots, preferences (such as theme), and tool UI state.</li>
+        <li>Cross-tool context snapshots used for AI continuity.</li>
+        <li>Limited AI memory records (for follow-up continuity), including your question text and generated summary.</li>
+      </ul>
+    </section>
 
-      <h3>3.2 Data received from external APIs</h3>
+    <section class="card">
+      <h2>5. What Leaves Your Device</h2>
       <p>
-        When you use live features, the App requests market/financial data from external
-        providers. The request may include ticker symbols and your API token (if required
-        by that provider).
+        The following can be transmitted from your device to third-party APIs to fulfill your request:
       </p>
-
-      <h3>3.3 Information we do not intentionally collect</h3>
       <ul>
-        <li>We do not require name, phone number, or home address.</li>
-        <li>We do not create user accounts for this App.</li>
-        <li>We do not run ad personalization profiles.</li>
+        <li><strong>Market data calls:</strong> ticker symbols, query parameters, and your provider API key/token.</li>
+        <li><strong>LLM calls:</strong> your prompt plus selected context (for example: active ticker(s), recent quote/news/filings summaries, and limited follow-up context).</li>
+        <li><strong>Network metadata:</strong> destination provider receives standard request metadata such as IP address and user-agent/device-network metadata that accompanies HTTPS requests.</li>
       </ul>
+      <p class="warn">
+        If you use AI features, those inputs are processed by the selected LLM provider under that provider's terms and privacy policy.
+      </p>
+      <p>
+        We do <strong>not</strong> operate a custom server that receives and stores your prompts, keys, or portfolio data for normal app operation.
+      </p>
     </section>
 
     <section class="card">
-      <h2>4. How We Use Information</h2>
-      <ul>
-        <li>To provide finance tool functionality inside the App.</li>
-        <li>To remember your local preferences and saved lists.</li>
-        <li>To fetch market and fundamentals data from provider APIs you enable.</li>
-        <li>To troubleshoot stability and improve app quality.</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>5. Data Storage and Retention</h2>
-      <ul>
-        <li>Most app data is stored locally on your device.</li>
-        <li>You can clear local data by deleting app data or uninstalling the App.</li>
-        <li>We do not maintain a centralized user account database for this App.</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>6. Third-Party Services</h2>
-      <p>The App may connect to third-party services to retrieve finance data, including:</p>
+      <h2>6. Third-Party Services Used</h2>
       <ul>
         <li><a href="https://finnhub.io/" target="_blank" rel="noopener noreferrer">Finnhub</a></li>
-        <li><a href="https://www.sec.gov/" target="_blank" rel="noopener noreferrer">U.S. SEC EDGAR</a></li>
-        <li>Static asset CDNs used to load front-end libraries (for example, chart/file libraries).</li>
+        <li><a href="https://financialmodelingprep.com/" target="_blank" rel="noopener noreferrer">Financial Modeling Prep (FMP)</a></li>
+        <li><a href="https://twelvedata.com/" target="_blank" rel="noopener noreferrer">Twelve Data</a></li>
+        <li><a href="https://platform.openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a></li>
+        <li><a href="https://www.anthropic.com/" target="_blank" rel="noopener noreferrer">Anthropic</a></li>
+        <li><a href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer">Google Gemini API</a></li>
       </ul>
       <p>
-        These providers process requests under their own privacy policies and terms.
-        We are not responsible for third-party policies.
+        Requests are restricted in-app by an HTTPS domain allowlist policy. Public CORS relay/proxy services are not used for market data in compliance mode.
       </p>
     </section>
 
     <section class="card">
-      <h2>7. Sharing and Selling Data</h2>
+      <h2>7. How We Use Data</h2>
+      <ul>
+        <li>Provide finance tool functionality and live data views.</li>
+        <li>Maintain local user state and preferences.</li>
+        <li>Generate AI outputs only when AI features are explicitly used.</li>
+        <li>Provider requests are initiated by your in-app actions (for example: Refresh, Analyze, Scan, Send in AI Copilot).</li>
+        <li>Enforce local AI budgeting/rate controls and show usage spend in app.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>8. Sharing and Selling</h2>
       <ul>
         <li>We do not sell personal information.</li>
-        <li>We do not share your local app data with data brokers.</li>
-        <li>Data is only sent to providers needed to fulfill your request (for example, quote/news endpoints).</li>
+        <li>We do not broker or monetize user data.</li>
+        <li>Data is shared only with the external provider(s) needed to perform your requested feature.</li>
+        <li>Because API requests go directly to your selected providers, those providers process data under their own terms and privacy policies.</li>
+        <li>Any third party receiving app data is expected to provide protection of user data consistent with its privacy policy and applicable law.</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>8. Security</h2>
-      <p>
-        We use reasonable safeguards for the app architecture, but no system is perfectly secure.
-        Keep your device protected and do not share API keys you consider sensitive.
+      <h2>9. Retention</h2>
+      <ul>
+        <li>API keys remain in Keychain until you clear them.</li>
+        <li>Local tool state/context remains on-device until cleared by app actions or uninstall.</li>
+        <li>AI session turns are in-session memory; limited AI memory/context snapshots may persist locally for continuity.</li>
+        <li>Third-party provider retention is governed by each provider's own policy.</li>
+      </ul>
+      <p class="small">
+        We cannot directly delete data retained by third-party providers. To delete provider-side data, use that provider account's controls/support channels.
       </p>
     </section>
 
     <section class="card">
-      <h2>9. Children</h2>
+      <h2>10. Security</h2>
+      <ul>
+        <li>API keys use native Keychain storage path.</li>
+        <li>Network access is constrained by host allowlist and HTTPS policy in app runtime.</li>
+        <li>No security measure is perfect; protect your device and API credentials.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>11. Children's Privacy</h2>
       <p>
-        The App is not directed to children under 13, and we do not knowingly collect personal
-        information from children under 13.
+        The App is not directed to children under 13, and we do not knowingly collect personal information from children under 13.
       </p>
     </section>
 
     <section class="card">
-      <h2>10. Your Rights</h2>
+      <h2>12. Your Choices and Rights</h2>
+      <ul>
+        <li>Clear keys from Settings at any time.</li>
+        <li>Delete local app data by using in-app clear functions or uninstalling the app.</li>
+        <li>Choose whether to enable AI and which provider key to use.</li>
+        <li>To stop AI processing entirely, clear OpenAI/Anthropic/Gemini keys and do not use AI features.</li>
+        <li>To stop market-provider processing, clear Finnhub/FMP/Twelve keys and do not run live data tools.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>13. App Store Privacy Label Alignment</h2>
       <p>
-        Because most data is stored locally on your device, you generally control it directly
-        (edit/delete/uninstall). For requests or questions, contact us at the email above.
+        App Store Connect privacy disclosures for MarketDash are intended to match this policy. If app data flows change,
+        this policy and App Store disclosures are updated together before release.
+      </p>
+      <ul>
+        <li><strong>Purpose:</strong> app functionality only.</li>
+        <li><strong>Tracking:</strong> not used for cross-app tracking by MarketDash.</li>
+        <li><strong>Architecture:</strong> BYOK direct-from-device calls to selected providers.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>14. International Processing</h2>
+      <p>
+        Third-party API providers may process requests in regions where they operate.
       </p>
     </section>
 
     <section class="card">
-      <h2>11. International Use</h2>
+      <h2>15. Changes to This Policy</h2>
       <p>
-        If you access the App from outside your country, your data may be processed in locations
-        where service providers operate.
+        We may update this policy. Updates appear at this URL with a revised "Last updated" date.
       </p>
     </section>
 
     <section class="card">
-      <h2>12. Changes to This Policy</h2>
+      <h2>16. Contact</h2>
       <p>
-        We may update this Privacy Policy from time to time. Updated versions will be posted at
-        this same URL with a new "Last updated" date.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>13. Contact</h2>
-      <p>
-        Email: <a href="mailto:04.ribbon.sinuous@icloud.com">04.ribbon.sinuous@icloud.com</a>
+        For support and privacy requests, use TestFlight feedback or the support contact listed in App Store Connect.
       </p>
     </section>
   </div>
